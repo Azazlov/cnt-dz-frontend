@@ -10,6 +10,7 @@ import { AddUserFormComponent } from "./pages/users-page/components/add-user-for
 import { ReactiveFormsModule } from "@angular/forms";
 import { SharedModule } from "../../domains/modules/shared/shared.module";
 import { EditUserComponent } from "./pages/users-page/components/edit-user/edit-user.component";
+import { AddAdminFormComponent } from "./pages/admins-page/components/add-admin-form/add-admin-form.component";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { EditUserComponent } from "./pages/users-page/components/edit-user/edit-
     RizhiComponentComponent,
     AddUserFormComponent,
     EditUserComponent,
+    AddAdminFormComponent,
   ],
 
   imports: [

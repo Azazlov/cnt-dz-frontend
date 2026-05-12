@@ -6,8 +6,12 @@
 <div class="users-page__content">
   <div class="users-page__table-wrapper">
     <app-table
-      [columnHeaders]="['id', 'Логин', 'Пароль', 'Enabled', 'Имя', 'Фамилия', 'Отчество', 'Дата регистрации', 'Дата рождения']"
-      [data]="admins">
+      [columnHeaders]="['ID', 'Имя', 'Активен', 'Дата рождения', 'Дата создания']"
+      [data]="tableData">
     </app-table>
   </div>
+
+  <aside class="users-page__aside">
+    <app-add-admin-form *ngIf="asideIndex == 1" (adminAdded)="onAdminAdded()" />
+  </aside>
 </div>
